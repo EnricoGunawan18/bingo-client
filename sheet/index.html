@@ -4,9 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BINGO SHEET</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    
+    <header>
+        <h1>BINGO</h1>
+    </header>
+    <main>
+        <table class="bingo-sheet">
+            <!-- <tr>
+                <td>10</td>
+                <td>10</td>
+                <td>10</td>
+                <td>10</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>10</td>
+                <td>10</td>
+                <td>10</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>10</td>
+                <td></td>
+                <td>10</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>10</td>
+                <td>10</td>
+                <td>10</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>10</td>
+                <td>10</td>
+                <td>10</td>
+                <td>10</td>
+            </tr> -->
+            <script>
+                for(i = 1; i < 6; i++){
+                    document.write("<tr id = \"row" + i +"\">")
+                    for(j = 0; j < 5; j++){
+                        document.write("<td></td>")
+                        
+                    }
+                    document.write("</tr>")
+                }
+            </script>
+        </table>
+
+        <div class="generate-button">
+            <button onclick="CreateSheet()">Create Sheet</button>
+        </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>

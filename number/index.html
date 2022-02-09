@@ -12,15 +12,11 @@
         <h1>BINGO NUMBER</h1>
     </header>
     <div class="generate-button">
-        <button>Get Number</button>
+        <button onclick="GetNumber()">Get Number</button>
     </div>
-    <p class="highlight-number">1</p>
+    <p class="highlight-number"></p>
 
-    <ul class="drawn-numbers">
-        <li>10</li>
-        <li>11</li>
-        <li>12</li>
-        <li>13</li>
+    <ul class="drawn-numbers" id = "past-numbers">
     </ul>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

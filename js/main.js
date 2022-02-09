@@ -1,5 +1,3 @@
-console.log("okk");
-
 function ajaxWithGenerateSheet(ajaxOptions){
     let deferred = new $.Deferred;
     
@@ -52,4 +50,18 @@ function CreateSheet(){
             });
 
         });
+}
+
+exclusion = []
+
+function GetNumber(){
+    let url = 'http://localhost:8000/';
+    ajaxWithGenerateSheet({
+        url: url + 'api/number?number=['+exclusion+']',
+        type: 'post',
+    }).done(function(data){
+        $(".highlight-number").text(data);
+        $("#past-numbers").append("<li>"+data+"</li>")
+        exclusion.push(parseInt(data))
+    });
 }
